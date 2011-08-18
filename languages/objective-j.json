@@ -1,7 +1,7 @@
 {
-    "name": "JavaScript",
+    "name": "Objective-J",
     
-    "extensions": "js",
+    "extensions": ["j"],
     
     "comment.line": "//",
     "comment.block.start": "/*",

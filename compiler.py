@@ -3,9 +3,10 @@
 import os.path
 import os
 
-amalg = "{"
+amalg = "{\n\n"
 
 # 1. Read all the files in languages/
+amalgs = []
 
 for path in os.listdir("languages"):
    # Get the file's name
@@ -15,9 +16,10 @@ for path in os.listdir("languages"):
    f.close()
    
    # 2. Glue them together
-   amalg += '"%s": %s, \n\n' % (name, contents)
+   amalgs.append('"%s": %s' % (name, contents))
 
-amalg += "}\n"
+amalg += ", \n\n".join(amalgs)
+amalg += "\n\n}\n"
 
 
 # 3. Minify

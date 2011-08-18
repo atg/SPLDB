@@ -1,9 +1,8 @@
 {
-    "name": "JavaScript",
+    "name": "CSS",
     
-    "extensions": "js",
+    "extensions": ["css"],
     
-    "comment.line": "//",
     "comment.block.start": "/*",
     "comment.block.end": "*/"
 }
