@@ -26,16 +26,30 @@ Please submit any changes as a pull request.
 
 ### Extending Languages
 
-The following keys are used in language definitions
+The following keys are currently used:
 
-    name (string): A display name for the language, complete with spaces and correct capitalization. This should be the *most common* rendering of the name.
+    name (string):
+        A display name for the language, complete with spaces and correct capitalization. This should be the *most common* rendering of the name.
     
-    tab-width: Consensus on tab size, in spaces, if it exists (eg 4 for python).
+    extensions (string|array):
+        Filename extensions for _source_ files. `.o`, `.pyc`, etc don't count.
+        For example:
+            "extensions": ["cpp", "c++", "cxx", "cc"]
+            "extensions": "py"
     
-    comment.line (string|array): A string that starts a line comment
-    comment.block.start (string|array): A string that starts a block comment. If array, must have same length as comment.block.end.
-    comment.block.end (string|array): A string that ends a block comment. If array, must have same length as comment.block.start.
-     
+    tab-width (int):
+        Consensus on tab size (in spaces), if it exists (eg 4 for python).
+    soft-tabs (bool):
+        Consensus on whether to use soft tabs or hard tabs, if it exists.
+    
+    comment.line (string|array):
+        A string that starts a line comment
+    comment.block.start (string|array):
+        A string that starts a block comment. If array, must have same length as comment.block.end.
+    comment.block.end (string|array):
+        A string that ends a block comment. If array, must have same length as comment.block.start.
+
+This is by no means all the keys we're ever going to have, so if you have an idea for a new key, please [submit an issue](/fileability/SPLDB/issues). You might want to have a look at [Hyperpolyglot](http://hyperpolyglot.org) which is the same sort of thing, but for humans instead of computers.
 
 ### New Languages
 
