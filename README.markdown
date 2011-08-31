@@ -58,7 +58,7 @@ If you want to contribute a *new* language, create a file `languagename.json`. T
 Then put in a bit of boilerplate:
 
     {
-        "name": "Ocaml",
+        "name": "OCaml",
     }
 
 The `name` attribute is used to give a display name to the language, complete with spaces and correct capitalization. This should be the *most common* rendering of the name.
