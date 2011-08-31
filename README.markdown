@@ -15,7 +15,7 @@ In [Chocolat](http://chocolatapp.com) (a text editor for Mac), we have a class w
 To get started:
 
     git clone https://github.com/fileability/SPLDB.git
-    python compile.py
+    python compiler.py
     cat data.json
 
 Then use one of the many [JSON implementations](http://www.json.org/).
