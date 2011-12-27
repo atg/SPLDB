@@ -15,7 +15,7 @@ In [Chocolat](http://chocolatapp.com) (a text editor for Mac), we have a class w
 To get started:
 
     git clone https://github.com/fileability/SPLDB.git
-    python compile.py
+    python compiler.py
     cat data.json
 
 Then use one of the many [JSON implementations](http://www.json.org/).
@@ -63,7 +63,7 @@ If you want to contribute a *new* language, create a file `languagename.json`. T
 Then put in a bit of boilerplate:
 
     {
-        "name": "Ocaml",
+        "name": "OCaml",
     }
 
 The `name` attribute is used to give a display name to the language, complete with spaces and correct capitalization. This should be the *most common* rendering of the name.
