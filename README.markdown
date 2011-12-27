@@ -26,7 +26,7 @@ Please submit any changes as a pull request.
 
 ### Extending Languages
 
-The following keys are currently used:
+The following keys are currently accepted for use:
 
     name (string):
         A display name for the language, complete with spaces and correct capitalization. This should be the *most common* rendering of the name.
@@ -48,6 +48,11 @@ The following keys are currently used:
         A string that starts a block comment. If array, must have same length as comment.block.end.
     comment.block.end (string|array):
         A string that ends a block comment. If array, must have same length as comment.block.start.
+    comment.nested.start (string|array):
+        A string that starts a nested block comment.
+    comment.nested.end (string|array):
+        A string that ends a nested block comment.
+
 
 This is by no means all the keys we're ever going to have, so if you have an idea for a new key, please [submit an issue](/fileability/SPLDB/issues). You might want to have a look at [Hyperpolyglot](http://hyperpolyglot.org) which is the same sort of thing, but for humans instead of computers.
 
